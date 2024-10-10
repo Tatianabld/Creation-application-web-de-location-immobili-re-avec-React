@@ -1,0 +1,35 @@
+.gallery {
+    background-color:#F6F6F6;
+    border-radius: 25px;
+    width: 1240px;
+}
+
+.properties-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    flex-wrap: wrap; /* Permet aux cartes de passer à la ligne si l'espace est insuffisant */
+    gap: 20px; /* Espacement entre les cartes */
+}
+  
+.property-card {
+    border: 1px solid #ccc; /* Bordure légère */
+    border-radius: 8px; /* Coins arrondis */
+    overflow: hidden; /* Évite que le contenu dépasse */
+    width: 340px; /* Largeur fixe pour les cartes */
+    height: 340px;
+    position : relative;
+}
+  
+  .property-card img {
+    width: 100%; /* L'image prend toute la largeur de la carte */
+    height: 100%; /* Hauteur fixe pour l'image */
+    object-fit: cover; /* Couvre l'espace sans déformer l'image */
+  }
+  
+  .property-card h2 {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-family: 'Montserrat';
+    font-size: 18px;
+  }

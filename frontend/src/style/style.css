@@ -1,0 +1,22 @@
+@import url(home.css);
+@import url(header.css);
+@import url(cards.css);
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 376px) and (max-width: 1439px) {
+    .body-container {
+        margin: 40px;
+        width: auto;
+    }
+}
+.body {
+    margin: 40px auto;
+    max-width: 1440px;
+    width: 100%;
+    
+    #root {}
+}
