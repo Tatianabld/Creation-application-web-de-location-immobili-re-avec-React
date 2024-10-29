@@ -1,22 +1,33 @@
 @import url(home.css);
 @import url(header.css);
 @import url(cards.css);
+@import url(footer.css);
+@import url(error.css);
+@import url(collapse.css);
+@import url(slideshow.css);
+@import url(property.css);
+
 
 * {
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
+    box-sizing: border-box;
+}
+
+#root {
+    margin: 40px auto;
+    max-width: 1440px; 
+    width: 100%; 
+    background-color: white;
+    padding: 0 20px; 
+}
+
+.body-container {
+    margin: 40px 0; 
 }
 
 @media only screen and (min-width: 376px) and (max-width: 1439px) {
-    .body-container {
-        margin: 40px;
-        width: auto;
+    .banner, .gallery {
+        margin-top: 40px;
     }
-}
-.body {
-    margin: 40px auto;
-    max-width: 1440px;
-    width: 100%;
-    
-    #root {}
 }

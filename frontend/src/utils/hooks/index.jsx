@@ -1,4 +1,4 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 
 const useFetch = (url) => {
   const [data, setData] = useState(null);
@@ -28,3 +28,8 @@ const useFetch = (url) => {
 };
 
 export default useFetch;
+
+export function useTheme() {
+  const { theme, toggleTheme } = useContext()
+  return { theme, toggleTheme }
+}

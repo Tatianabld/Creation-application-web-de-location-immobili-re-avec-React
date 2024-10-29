@@ -1,0 +1,54 @@
+
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.error-code p {
+    font-size: 288px;
+    font-weight: bold;
+    color: #FF6060;
+    margin: 0;
+}
+
+
+.error-message p {
+    font-size: 36px;
+    color: #FF6060; 
+    margin: 100px 0 100px 0;
+}
+
+
+.error-link a {
+    font-size: 18px;
+    color: #000000;
+    padding: 10px 20px;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 1024px) and (min-width: 601px) {
+
+}
+
+
+
+@media (max-width: 600px) {
+    .error-code p {
+        font-size: 96px;
+    }
+    .error-message p {
+        font-size: 18px;
+    }
+    .error-link a {
+        font-size: 14px;
+    }
+    .break-line {
+        display: block;
+    }
+}
