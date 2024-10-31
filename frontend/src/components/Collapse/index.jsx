@@ -18,14 +18,13 @@ function Collapse({ title, children }) {
         <img 
           src={isOpen ? fleche2 : fleche1} 
           alt="Chevron" 
-          className={`chevron ${isOpen ? 'open' : ''}`} 
-        /> {/* Afficher fleche1 ou fleche2 selon l'état */}
+        />
       </div>
 
       {/* Afficher le contenu seulement si le Collapse est ouvert */}
       {isOpen && (
         <div className="collapse-content">
-          {children}
+          {children} {/* Contenu qui est passé en tant qu'enfant au composant*/}
         </div>
       )}
     </div>

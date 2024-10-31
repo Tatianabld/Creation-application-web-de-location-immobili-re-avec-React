@@ -46,7 +46,7 @@ function Slideshow({ images }) {
 }
 
 Slideshow.propTypes = {
-  images: PropTypes.array.isRequired, // Spécifiez que 'images' est un tableau requis
+  images: PropTypes.array.isRequired, // garantit que le composant reçoit les bonnes données et aide à éviter des erreurs potentielles
 };
 
 export default Slideshow;

@@ -1,14 +1,14 @@
 import React from 'react';
 import { useParams, Navigate } from "react-router-dom";
-import useFetch from "../../utils/hooks"; // Assurez-vous d'importer votre hook personnalisé
+import useFetch from "../../utils/hooks"; 
 import Slideshow from "../../components/Slideshow";
 import Collapse from '../../components/Collapse';
 import redStar from '../../assets/Vector.png';
 import greyStar from '../../assets/Vector (1).png';
 
 const Property = () => {
-  const { id } = useParams(); // Récupérer l'ID de l'URL
-  const { data: properties, loading, error } = useFetch('http://localhost:8080/api/properties'); // Récupérer la liste des propriétés
+  const { id } = useParams(); // Récupérer l'ID
+  const { data: properties, loading, error } = useFetch('http://localhost:8080/api/properties'); // Récupérer la liste des "properties"
 
   if (loading) {
     return <div>Loading...</div>;
@@ -18,7 +18,7 @@ const Property = () => {
     return <div>Error: {error.message}</div>;
   }
 
-  // Trouver la propriété correspondante à l'ID
+  // Recherche de la propriété correspondante à l'ID dans la liste des propriétés
   const property = properties.find((property) => property.id === id);
 
   if (!property) {
