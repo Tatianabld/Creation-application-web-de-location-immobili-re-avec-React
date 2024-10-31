@@ -33,6 +33,13 @@
   color: white; 
 }
 
+.collapse-header img {
+  transition: transform 0.3s ease;
+}
+
+.collapse-header img.rotate {
+  transform: rotate(-180deg);
+}
 
 .collapse-content {
   padding: 15px;

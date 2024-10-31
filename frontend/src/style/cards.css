@@ -23,7 +23,6 @@
   border-radius: 15px;
   overflow: hidden;
   position: relative;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
   margin: 25px;
 }
@@ -74,6 +73,8 @@
 
   .gallery {
     padding: 0px;
+    background-color: transparent;
+    box-shadow: none;
   }
 
   .property-card {

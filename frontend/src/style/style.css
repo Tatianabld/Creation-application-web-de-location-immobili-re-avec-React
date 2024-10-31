@@ -15,15 +15,15 @@
 }
 
 #root {
-    margin: 40px auto;
+    margin-top: 40px;
     max-width: 1440px; 
     width: 100%; 
     background-color: white;
     padding: 0 20px; 
 }
 
-.body-container {
-    margin: 40px 0; 
+body {
+    margin-bottom: 0px;
 }
 
 @media only screen and (min-width: 376px) and (max-width: 1439px) {

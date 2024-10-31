@@ -20,8 +20,9 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover {
-    border-bottom: 2px solid black;
+nav .active {
+    text-decoration: underline;
+    color: black;
 }
 
 ul {

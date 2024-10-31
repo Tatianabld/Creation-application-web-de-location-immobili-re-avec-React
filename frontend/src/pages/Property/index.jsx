@@ -3,8 +3,7 @@ import { useParams, Navigate } from "react-router-dom";
 import useFetch from "../../utils/hooks"; 
 import Slideshow from "../../components/Slideshow";
 import Collapse from '../../components/Collapse';
-import redStar from '../../assets/Vector.png';
-import greyStar from '../../assets/Vector (1).png';
+import Rating from '../../components/Rating';
 
 const Property = () => {
   const { id } = useParams(); // Récupérer l'ID
@@ -46,11 +45,7 @@ const Property = () => {
                 <img src={property.host.picture} alt={property.host.name} className="host-pic" />
               </div>
               <div className="property-rating">
-              <img src={redStar} alt="évaluaion par étoiles" />
-              <img src={redStar} alt="évaluaion par étoiles" />
-              <img src={redStar} alt="évaluaion par étoiles" />
-              <img src={greyStar} alt="évaluaion par étoiles" />
-              <img src={greyStar} alt="évaluaion par étoiles" />
+              <Rating rating={property.rating} />
               </div>
             </div>
           </div>

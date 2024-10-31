@@ -1,13 +1,17 @@
 import React from 'react'; 
 import Collapse from '../../components/Collapse';
 import paysageImg2 from '../../assets/Image-source-2.jpg';
+import Banner from '../../components/Banner';
 
 function About() {
     return (
       <div className='About-page'>
-      <div className="banner">
-        <img src={paysageImg2} alt="paysage" />
-      </div>
+       <Banner
+          imageSrc={paysageImg2} 
+          altText="paysage" 
+          title=""
+        > 
+        </Banner>
       <div className="about-collapse">
       <Collapse title="Fiabilité">
         <p>Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.</p>

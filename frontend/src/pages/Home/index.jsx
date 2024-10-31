@@ -1,16 +1,16 @@
 import React from 'react'; 
 import paysageImg1 from '../../assets/Image-source-1.jpg';
 import Properties from '../../components/Properties';
+import Banner from '../../components/Banner';
 
 function Home() {
   return (
     <div className="home">
-      <div className="banner">
-        <img src={paysageImg1} alt="paysage" />
-        <h1>
-          Chez vous,<span className="mobile-break"> partout et ailleurs</span>
-        </h1>
-      </div>
+      <Banner 
+        imageSrc={paysageImg1} 
+        altText="paysage" 
+        title="Chez vous, partout et ailleurs"
+      />
       <div className='gallery'>
         <Properties/>
       </div>

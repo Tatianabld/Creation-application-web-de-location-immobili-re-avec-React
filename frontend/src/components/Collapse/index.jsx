@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useState } from 'react';
-import fleche1 from '../../assets/fleche.png';
-import fleche2 from '../../assets/fleche2.png';
+import fleche from '../../assets/fleche.png';
 
 function Collapse({ title, children }) {
   const [isOpen, setIsOpen] = useState(false); // Etat pour ouvrir/fermer le collapse
@@ -16,12 +15,12 @@ function Collapse({ title, children }) {
       <div className="collapse-header" onClick={toggleCollapse}>
         <h2>{title}</h2>
         <img 
-          src={isOpen ? fleche2 : fleche1} 
+          src={fleche} 
           alt="Chevron" 
+          className={isOpen ? "rotate" : ""} 
         />
       </div>
 
-      {/* Afficher le contenu seulement si le Collapse est ouvert */}
       {isOpen && (
         <div className="collapse-content">
           {children} {/* Contenu qui est passé en tant qu'enfant au composant*/}

@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 function Error() {
@@ -12,7 +12,7 @@ function Error() {
         <p>Oups! La page que <span className="break-line">vous demandez n'existe pas.</span></p>
         </div>
         <div className="error-link">
-          <Link to="/">Retourner sur la page d'accueil</Link>
+          <NavLink to="/">Retourner sur la page d'accueil</NavLink>
         </div>
       </div>
     );
