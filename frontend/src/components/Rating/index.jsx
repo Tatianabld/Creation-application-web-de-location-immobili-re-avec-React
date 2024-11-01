@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import redStar from '../../assets/Vector.png'
 import greyStar from '../../assets/Vector (1).png';
 
@@ -24,8 +23,5 @@ function Rating({ rating }) {
     );
 }
 
-Rating.propTypes = {
-    rating: PropTypes.number.isRequired, 
-};
 
 export default Rating;

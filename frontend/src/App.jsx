@@ -11,6 +11,7 @@ import Error from './components/Error';
 function App() {
   return (
     <Router>
+      <div className="app-container">
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -18,6 +19,7 @@ function App() {
         <Route path="property/:id" element={<Property />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      </div>
       <Footer />
     </Router>
   );

@@ -5,9 +5,7 @@ function Banner({ imageSrc, altText, title }) {
     return (
         <div className="banner">
             <img src={imageSrc} alt={altText} />
-            <h1>
-                {title}
-            </h1>
+            {title ? <h1>{title}</h1> : ""}
         </div>
     );
 }
